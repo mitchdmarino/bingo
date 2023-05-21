@@ -4,7 +4,7 @@ import "./Square.css"
 
 function SquareContent({task="placeholder"}) {
     const [size, setSize] = useState(12)
-    
+
     useEffect(() => {
         if (task==="FREE") {
             setSize(40)
@@ -28,7 +28,11 @@ export const Square = props => {
   // Programatically click the hidden file input element
   // when the Button component is clicked
   const handleClick = event => {
-    hiddenFileInput.current.click();
+    if (props.task === "FREE") {
+        return
+    } else {
+        hiddenFileInput.current.click();
+    }
   };
   // Call a function (passed as a prop from the parent component)
   // to handle the user-selected file 
