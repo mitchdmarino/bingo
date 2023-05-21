@@ -6,8 +6,8 @@ import "./Board.css"
 
 export default function Board() {
     
-    const squares = tasks.map(task => {
-        return <Square task={task} />
+    const squares = tasks.map((task, i) => {
+        return <Square key={i} task={task} />
     })
 
     return (

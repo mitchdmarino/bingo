@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <div>
         <h1>Webtoon Bingo</h1>
+        <p>Tap on a square to add a picture.</p>
       </div>
 
       <div className="main">
