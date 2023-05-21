@@ -15,3 +15,8 @@
 .square .task {
     padding: 2px;
 }
+
+.img-preview {
+    max-width: 100%;
+    max-height: 100%;
+}

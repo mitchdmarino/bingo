@@ -1,4 +1,4 @@
-import Square from "../Square/Square"
+import {Square} from "../Square/Square"
 
 import { tasks } from "./tasks"
 import "./Board.css"
