@@ -4,19 +4,19 @@ import "./Square.css"
 
 function SquareContent({task="placeholder"}) {
     const [size, setSize] = useState(12)
-    const [bold, setBold] = useState(100)
+    const [bold, setBold] = useState(400)
 
     useEffect(() => {
         if (task==="FREE") {
             setSize(40)
-            setBold("bold")
+            setBold(700)
         } 
     }, [task])
        
 
     return (
         <div>
-            <p style={{fontSize: size, fontWeight: 700}} className="task">{task}</p>
+            <p style={{fontSize: size, fontWeight: bold}} className="task">{task}</p>
         </div>
     )
 }
